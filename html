@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+</head>
+<body>
+    <div class="logo-container">
+        <img class="logo" src="/images/logo.png">
+    </div>
+
+    <div class="container">
+        <div class="from-box">
+            <h1 id="title">Sign In</h1>
+            <form>
+
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input id="username" type="text" placeholder="Name" autocomplete="off">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input id="password" type="password" placeholder="password" autocomplete="off">
+                    </div>
+
+                    <p>Don't have an account? <a href="/singUp/signUp.html">Click Here!</a></p>
+
+                </div>
+
+                <div class="btn-field">
+                    <button type="button" id="signinBtn" class="disable" >SignIn</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="/singIn.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" > </script>
+
+</body>
+</html>

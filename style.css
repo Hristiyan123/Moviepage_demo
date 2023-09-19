@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background: url(/images/backgroun-imagee.png);
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%; 
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 50vh;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+.from-box{
+    width: 20%;
+    max-width: 400px;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background:#0f2133;
+    padding: 50px 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.from-box p{
+    color:rgb(208, 207, 207);
+}
+
+.from-box ~ * {
+    visibility: hidden;
+  }
+
+
+.from-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #ffa300;
+    position: relative;
+}
+
+.from-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-bottom: 3px;
+    background:#ffa300 ;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-field{
+    background: #535050;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i{
+    margin-left: 10px;
+    color: #999;
+}
+
+ p{
+    text-align: left;
+    font-size: 13px;
+}
+
+p a{
+    text-decoration: none;
+    color: #ffa300;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.btn-field button{
+    flex-basis: 60%;
+    background: #ffa300;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    margin-top: -60px;
+}
+
+.input-group{
+    height: 280px;
+}
+
